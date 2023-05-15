@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/bg_anim.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: "Inter Tight";
+  margin: 0;
+}
+
+.author {
+  color: #79444a;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.body {
+  background-color: #79444a;
+  color: #fff;
+  padding: 30px;
+  line-height: 2;
+}
+
+.header {
+  position: absolute;
+  top: 100px;
+  background-color: #d2c9a5;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.thread a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.thread a:hover {
+  text-decoration: underline;
+}
+
+.game {
+  display: none;
+  font-size: 50px;
+  color: #79444a;
+  margin-left: 35%;
+}
+
+.toggle {
+  position: fixed;
+  top: 19px;
+  left: 15px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  z-index: 2;
+}
+
+.toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #79444a;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .toggle {
+    display: flex;
+  }
+  .game {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-links a {
+    text-align: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+.current {
+  background-color: #c4ba92;
+}
+
+.nav {
+  background-color: #d2c9a5;
+  opacity: 0.9;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+}
+
+.nav-btn {
+  background-color: #d2c9a5;
+}
+
+.nav a {
+  float: left;
+  font-size: 20px;
+  color: #79444a;
+  padding: 25px 30px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #d1b187;
+  color: #fff;
+  box-shadow: inset 0 5px 10px #ac8f6a;
+}
+
+.logo {
+  height: 65px;
+  width: 65px;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+
+  position: fixed;
+}
+
+.bottombar {
+  position: relative;
+  top: 850px;
+  background-color: #d2c9a5;
+  opacity: 0.9;
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+}
